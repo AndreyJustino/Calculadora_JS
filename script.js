@@ -1,7 +1,7 @@
 let array = []
 let caracterio = ''
 
-function digito(n){
+function calculadora(n){
 
     let tela = document.getElementById('tela')
 
@@ -10,28 +10,28 @@ function digito(n){
         array.push(caracterio)
         array.push('+')
         caracterio = ''
-        console.log(array)
+        tela.value = '+'
 
     } else if( n === 'subtracao' ) {
 
         array.push(caracterio)
         array.push('-')
         caracterio = ''
-        console.log(array)
+        tela.value = '-'
 
     } else if(n === 'divisao') {
 
         array.push(caracterio)
         array.push('/')
         caracterio = ''
-        console.log(array)
+        tela.value = '÷'
 
     } else if(n === 'multiplicacao') {
 
         array.push(caracterio)
         array.push('*')
         caracterio = ''
-        console.log(array)
+        tela.value = 'x'
     
     } else if (n === 'limpar') {
 
@@ -52,11 +52,12 @@ function digito(n){
                         calculo  = calculo + value
                     })
 
-                    console.log(calculo)
-
                     let resultado = eval(calculo)
                     
                     tela.value = resultado
+
+                    array = []
+                    caracterio = resultado
 
                 } else{
                     alert('Precisa-se de um operador')

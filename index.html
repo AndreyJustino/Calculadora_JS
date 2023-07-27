@@ -11,61 +11,26 @@
         <input type="text" class="tela" id="tela" disabled>
     </div>
     <div class="teclas">
-        <button class="operadores" id="+" onclick="digito('adicao')" >+</button>
-        <button class="operadores" id="-" onclick="digito('subtracao')" >-</button>
-        <button class="operadores" id="*" onclick="digito('multiplicacao')" >x</button>
-        <button class="operadores" id="/" onclick="digito('divisao')" >÷</button>
+        <button class="operadores" id="+" onclick="calculadora('adicao')" >+</button>
+        <button class="operadores" id="-" onclick="calculadora('subtracao')" >-</button>
+        <button class="operadores" id="*" onclick="calculadora('multiplicacao')" >x</button>
+        <button class="operadores" id="/" onclick="calculadora('divisao')" >÷</button>
 
-        <button class="botao" id="numero1" onclick="digito(1)">1</button>
-        <button class="botao" id="numero2" onclick="digito(2)">2</button>
-        <button class="botao" id="numero3" onclick="digito(3)">3</button>
-        <button class="botao" id="numero4" onclick="digito(4)">4</button>
-        <button class="botao" id="numero5" onclick="digito(5)">5</button>
-        <button class="botao" id="numero6" onclick="digito(6)">6</button>
-        <button class="botao" id="numero7" onclick="digito(7)">7</button>
-        <button class="botao" id="numero8" onclick="digito(8)">8</button>
-        <button class="botao" id="numero9" onclick="digito(9)">9</button>
-        <button class="botao" id="numero0" onclick="digito(0)">0</button>
+        <button class="botao" id="numero1" onclick="calculadora(1)">1</button>
+        <button class="botao" id="numero2" onclick="calculadora(2)">2</button>
+        <button class="botao" id="numero3" onclick="calculadora(3)">3</button>
+        <button class="botao" id="numero4" onclick="calculadora(4)">4</button>
+        <button class="botao" id="numero5" onclick="calculadora(5)">5</button>
+        <button class="botao" id="numero6" onclick="calculadora(6)">6</button>
+        <button class="botao" id="numero7" onclick="calculadora(7)">7</button>
+        <button class="botao" id="numero8" onclick="calculadora(8)">8</button>
+        <button class="botao" id="numero9" onclick="calculadora(9)">9</button>
+        <button class="botao" id="numero0" onclick="calculadora(0)">0</button>
 
-        <button class="botao" id="decimal" onclick="digito('.')">.</button>
-        <button class="botao" id="limpar" onclick="digito('limpar')">AC</button>
-        <button class="botao" id="calcular" onclick="digito('=')">=</button>
+        <button class="botao" id="decimal" onclick="calculadora('.')">.</button>
+        <button class="botao" id="limpar" onclick="calculadora('limpar')">AC</button>
+        <button class="botao" id="calcular" onclick="calculadora('=')">=</button>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="tela">0</div>
-    <div class="teclas">
-        <button class="operadores" id="soma" value="+">+</button>
-        <button class="operadores" id="subtracao" value="-">-</button>
-        <button class="operadores" id="multiplicacao" value="*">x</button>
-        <button class="operadores" id="divisao" value="/">÷</button>
-
-        <button class="botao" id="numero1" value=1>1</button>
-        <button class="botao" id="numero2" value=2>2</button>
-        <button class="botao" id="numero3" value=3>3</button>
-        <button class="botao" id="numero4" value=4>4</button>
-        <button class="botao" id="numero5" value=5>5</button>
-        <button class="botao" id="numero6" value=6>6</button>
-        <button class="botao" id="numero7" value=7>7</button>
-        <button class="botao" id="numero8" value=8>8</button>
-        <button class="botao" id="numero9" value=9>9</button>
-        <button class="botao" id="numero0" value=0>0</button>
-
-        <button class="botao" id="decimal">.</button>
-        <button class="botao" id="limpar">AC</button>
-        <button class="botao" id="calcular" onclick="digito('=')">=</button>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html> -->
