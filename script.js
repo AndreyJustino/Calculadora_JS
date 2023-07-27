@@ -38,7 +38,6 @@ function calculadora(n){
         caracterio = ''
         array = []
         tela.value = 0
-        console.log(array)
 
     } else {
         let calculo = ''
